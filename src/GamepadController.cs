@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging.Abstractions;
 using SharpDX;
 using SharpDX.DirectInput;
 
-namespace MaxRev.Input.Windows;
+namespace MaxRev.Input.Gamepad;
 
 /// <summary>
 /// Controls gamepad events. Don't forget to dispose

@@ -1,4 +1,4 @@
-﻿namespace MaxRev.Input.Windows;
+﻿namespace MaxRev.Input.Gamepad;
 
 /// <summary>
 /// Enum of buttons of gamepad

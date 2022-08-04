@@ -1,7 +1,7 @@
 ﻿using System.Collections.Concurrent;
 using Timer = System.Timers.Timer;
 
-namespace MaxRev.Input.Windows;
+namespace MaxRev.Input.Gamepad;
 
 /// <summary>
 /// Debouncer for gamepad to trigger longpress events and ignore quick clicks on input

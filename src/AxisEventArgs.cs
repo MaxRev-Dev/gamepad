@@ -1,4 +1,4 @@
-﻿namespace MaxRev.Input.Windows;
+﻿namespace MaxRev.Input.Gamepad;
 
 /// <summary>
 /// Represents an axis event

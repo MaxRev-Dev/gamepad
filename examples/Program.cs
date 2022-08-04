@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using MaxRev.Input.Windows;
+using MaxRev.Input.Gamepad;
 
 // Don't forget to dispose gamepad
 using var gamepad = new GamepadController();
