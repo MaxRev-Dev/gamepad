@@ -4,6 +4,7 @@ using MaxRev.Input.Gamepad;
 
 // Don't forget to dispose gamepad
 using var gamepad = new GamepadController();
+gamepad.AwaitForReconnection = true;
 gamepad.AxisChanged += (s, e) =>
 {
     Console.WriteLine($"Axis {e.Axis} - {e.Value}");
@@ -14,6 +15,16 @@ gamepad.ButtonChanged += (s, e) =>
     Console.WriteLine($"Button {e.Button} - {e.Pressed}");
     // your own logic
 };
+gamepad.OnDisconnected += (s) =>
+{
+    // Oh, creap! Gamepad was disconnected
+};
+gamepad.OnReady += (s) =>
+{
+    // Gamepad was reconnected and ready to receive input!
+};
+
+
 
 // Debouncer can be optinally subscribed for input events
 using var inputDebouncer = new GamepadInputDebouncer(gamepad);

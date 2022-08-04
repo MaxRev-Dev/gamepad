@@ -2,7 +2,11 @@
 
 # SNES Gamepad Controller
 A simple gamepad controller with debouncer using SharpDX (DirectX).
-
+This project is similar to https://github.com/nahueltaibo/gamepad, but works in Windows using DirectX API.
+### Installation:
+```powershell
+Install-Package MaxRev.Input.Gamepad 
+```
 ### Usage:
 ```C#
 // See https://aka.ms/new-console-template for more information
@@ -22,9 +26,10 @@ gamepad.ButtonChanged += (s, e) =>
     // your own logic
 };
 ```
-### You can also configure and attach a debouncer to handle longpress: events
+### You can also configure and attach a debouncer to handle longpress events:
 ```C#
 // Debouncer can be optinally subscribed for input events
+using var gamepad = new GamepadController();
 using var inputDebouncer = new GamepadInputDebouncer(gamepad);
 inputDebouncer.DebounceInterval = TimeSpan.FromMilliseconds(100);
 inputDebouncer.LongPressInterval = TimeSpan.FromMilliseconds(250);
@@ -41,7 +46,20 @@ inputDebouncer.ButtonLongPress += (s, e) =>
 
 ```
 
-This project is simmilar to https://github.com/nahueltaibo/gamepad, but works in Windows using DirectX API.
+### Connected/Disconnected events:
+By default controller awaits for gamepad to be reconnected.
+```C#
+using var gamepad = new GamepadController();
+gamepad.AwaitForReconnection = true;
+gamepad.OnDisconnected += (s) =>
+{
+    // Oh, crap! Gamepad was disconnected!
+};
+gamepad.OnReady += (s) =>
+{
+    // Gamepad was reconnected and ready to receive input!
+};
+```
 
 ## Donations
 Made with ❤️ in &#127482;&#127462;
