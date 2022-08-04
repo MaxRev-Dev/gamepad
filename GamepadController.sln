@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamepadController", "src\GamepadController.csproj", "{484654AA-069D-4266-A978-FD248398C227}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamepadController.Examples", "examples\GamepadController.Examples.csproj", "{3DFB0E71-B6EF-487F-AFF5-A8325D0E8C45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{484654AA-069D-4266-A978-FD248398C227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{484654AA-069D-4266-A978-FD248398C227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{484654AA-069D-4266-A978-FD248398C227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{484654AA-069D-4266-A978-FD248398C227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DFB0E71-B6EF-487F-AFF5-A8325D0E8C45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DFB0E71-B6EF-487F-AFF5-A8325D0E8C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DFB0E71-B6EF-487F-AFF5-A8325D0E8C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DFB0E71-B6EF-487F-AFF5-A8325D0E8C45}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B855CBA-B1A1-412D-8CF7-CE72233287F9}
+	EndGlobalSection
+EndGlobal
