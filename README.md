@@ -1,4 +1,4 @@
-<img align="left" height="50" src="media/icon.png" alt="Gamepad">
+<img align="left" height="85" src="media/icon.png" alt="Gamepad">
 
 # SNES Gamepad Controller
 A simple gamepad controller with debouncer using SharpDX (DirectX).
